@@ -1,0 +1,145 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+        <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+  <ion-item lines="none">
+    
+    <ion-label>
+      <h3>Welcome to Indian Churches Network</h3>
+    </ion-label>
+ </ion-item>
+    </ion-header>
+
+<ion-content [fullscreen]="true">
+
+
+  <div class="slides ion-margin-bottom" [hidden]= 'isHidden'>
+    <ion-slides #slides [options]="slidesOptions" (ionSlideWillChange)="whenslidechange(slides)" >
+      <ion-slide  *ngFor="let video1 of videos">
+        <ion-card  style="box-shadow: none;">
+           <ion-card-content>
+          <iframe class="frameclass" name="event" width="100%" height="315" [src]="video1.video_link | safepipe:'resourceUrl'" title="YouTube video player" frameborder="0"  allowfullscreen></iframe>
+            <p class="ion-margin-bottom">
+            </p>{{video1.video_name}}
+            <ion-card-subtitle class="ion-text-right">Views:{{video1.view_count}}</ion-card-subtitle>
+            <ion-button (click)="swipeNext()">Next</ion-button>
+            <ion-button  float-left (click)="swipePre()">Previous</ion-button>
+
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+    
+
+     
+
+
+     
+    </ion-slides>
+  </div>
+  <div class="container">
+    <h2>Verses</h2>
+    <ion-slides #slides [options]="slidesOptions" (ionSlideWillChange)="whenslidechange(slides)" >
+      <ion-slide  *ngFor="let video1 of videos2;let i=index;">
+        
+        <ion-card  style="box-shadow: none;" style="height: 350px;width:100%;">
+          <img [src]="video1.image  | safepipe:'resourceUrl'"  style="height: 310px;"/>
+        <ion-card-content>
+          <ion-button (click)="share(video1.image)">Share</ion-button>
+
+        </ion-card-content>   
+         </ion-card>
+         
+      </ion-slide>
+        
+    </ion-slides>
+
+    
+  </div>
+  <div class="container">
+    <div class="cssmarquee">
+      <h2>
+        Joy Creative Production -Are you looking for a video editor, content creator, song composer, lyric writer, translator(Tamil = English), Transcription, Social Media Service & More. Feel free to call us 9042494996 / 8870001293.
+      </h2>
+     
+    </div>
+</div>
+
+<div class="container">
+<!---- <h2>Automatic Images</h2>-->
+  <ion-slides [options]="{ slidesPerView:1, autoplay: {delay: 1500} }">
+    <ion-slide  *ngFor="let video1 of videos2">
+
+        <!--img class="designimg" [src]="video1.image  | safepipe:'resourceUrl'"/-->
+        <img [src]="img_link" style="width:80%" />
+
+    </ion-slide>
+      
+  </ion-slides>
+
+  
+</div>
+    
+  
+  <div class="slides ion-margin-bottom" [hidden]= 'isHidden'>
+    <h2>My Story</h2>
+
+    <ion-slide  *ngFor="let video of videos1">
+      <ion-card  style="box-shadow: none;">
+         <ion-card-content>
+        <iframe width="100%" height="315" [src]="video.video_link | safepipe:'resourceUrl'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p class="ion-margin-bottom">{{video.video_name}}
+          </p>
+          <ion-card-subtitle class="ion-text-right">Views:{{video.view_count}}</ion-card-subtitle>
+            <ion-progress-bar value="0.5" color="custom"></ion-progress-bar>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+
+    
+    </div>
+    <div class="container ion-margin-bottom">
+
+    <h2>ADD YOUR CHURCH</h2>
+    
+        <p>Church directory  to find the location and activities of your Church.</p>
+
+        <p class="ion-text-right"><a href="https://www.indianchurches.net/churches_add_page1.php" onclick="window.open(this.href,'_self','location=yes');">
+          
+        Click here</a></p>
+        </div>
+
+        <div class="container ion-margin-bottom">
+
+          <h2>Games</h2>
+          
+              <p> Put  your vision into effect    </p>
+      
+              <p class="ion-text-right"><a routerLink='/dailyverse'>
+      
+              Click here</a></p>
+              </div>
+
+              <div class="container ion-margin-bottom">
+
+                <h2 color="#FF0000">Quizes</h2>
+                
+                    <p>Brainstorm encouraged</p>
+            
+                    <p class="ion-text-right"><a routerLink='/quize'>
+            
+                    Click here</a></p>
+                    </div>
+                  </ion-content>
+
+
+  <!--div id="container" background-color="#fffffff">
+
+    <ion-button (click)='selectImage()'>Pick Image</ion-button>
+    <img src="{{img_path}}" alt="" srcset="">
+    <ion-button (click)='uploadImage()'>Upload Image</ion-button>
+
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  </div-->

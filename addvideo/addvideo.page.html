@@ -1,0 +1,67 @@
+<ion-header> <ion-toolbar>
+  <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+  </ion-buttons>
+<ion-title>
+  Add Video
+</ion-title>
+</ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-content>
+    <div class="slides ion-margin-bottom">
+      <ion-slides #slides [options]="slidesOptions" (ionSlideWillChange)="whenslidechange(slides)" >
+        <ion-slide  *ngFor="let video1 of videos">
+          <ion-card  style="box-shadow: none;">
+             <ion-card-content>
+            <iframe class="frameclass" name="event" width="100%" height="315" [src]="video1.video_link | safepipe:'resourceUrl'" title="YouTube video player" frameborder="0"  allowfullscreen></iframe>
+              <p class="ion-margin-bottom">
+              </p>{{video1.video_name}}
+              <ion-card-subtitle class="ion-text-right">Views:{{video1.view_count}}</ion-card-subtitle>
+              <ion-button (click)="getvalue(video1.id)">Delete</ion-button>
+              <ion-button (click)="swipeNext()">Next</ion-button>
+
+            </ion-card-content>
+          </ion-card>
+        </ion-slide>
+      </ion-slides>
+    </div>
+
+    <div class="container">
+        <!--ion-card>
+          <ion-card-header>
+            <h2>Add Video Details</h2>
+          </ion-card-header>
+          <ion-card-content>
+            <div class="ion-padding">
+              <div class="wrap-input" padding>
+                <input class="input" type="text" [(ngModel)]="video_link" placeholder="Video Link">
+              </div>
+        
+              <div class="wrap-input" padding>
+                <input class="input" type="text" [(ngModel)]="video_name" placeholder="Video Name">
+              </div>
+              
+              <div class="wrap-input" padding>
+                <input class="input" type="text" [(ngModel)]="view_count" placeholder="View Count">
+              </div>
+        
+        
+            
+              <div class="container-form-btn">
+                <ion-button (click)="testClick()">Submit</ion-button>
+
+               </div>
+          </div>
+          </ion-card-content>
+        </ion-card-->
+      </div>
+  
+       
+  
+  
+       
+    
+  
+</ion-content>

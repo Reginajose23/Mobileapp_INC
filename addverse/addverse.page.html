@@ -1,0 +1,21 @@
+<ion-header> <ion-toolbar>
+  <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+  </ion-buttons>
+<ion-title>
+  Add Verse
+</ion-title>
+</ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="con-sp">
+<ion-button full (click)="selectImage()">Take Photo/Choose </ion-button>
+
+
+</div>
+<img [src]="base64Image"/>
+<div class="container-form-btn">
+<ion-button full (click)="uploadImage()">Upload Image</ion-button>
+</div>
+</ion-content>

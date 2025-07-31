@@ -1,0 +1,129 @@
+.contact-wrap
+{
+    width:100%;
+    height:auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+    background: linear-gradient(90deg,rgba(43,90,148,1) 0%,
+   rgba(45,112,229,1) 35%,rgb(132, 142, 158) 100%);
+}
+.contact-in{
+    padding: 48px 30px;
+}
+.contact-in:nth-child(1)
+{
+    flex:30%;
+    
+}
+.contact-in:nth-child(2)
+{
+    flex:45%;
+    background: #c31432;
+}
+.contact-in:nth-child(3)
+{
+    flex:25%;
+    padding: 0;
+}
+.contact-in h1{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 20px;
+
+    line-height: 20px;
+
+}
+.contact-in h2{
+    font-size: 16px;
+    
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+span{
+    font-size: 14px;
+    padding-left: 5px;
+
+    font-weight: bold;
+}
+.contact-in h2 ion-icon{
+    font-size: 16px;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background: #fff;
+    color:#000;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    
+}
+
+.contact-in p{
+    font-size: 14px;
+    
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #000;
+
+}
+a{
+    color: #000;
+}
+.contact-in h3{
+    font-size: 20px;
+    
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.contact-in ul{
+    padding: 0;
+    margin: 0;
+}
+.contact-in ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.contact-in ul li a{
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: #000;
+    border-radius: 50px;
+}
+.contact-in ul li a ion-icon{
+      border-radius: 20px;
+}
+.custom-font{
+    font-family: 'Josefin Sans', sans-serif;
+}
+ion-toolbar{
+    --background:transparent;
+    ion-title{
+        padding:20px 0 46px 0;
+        font-weight: 900;
+    }
+    p{
+        padding: 20px 0 20px 0;
+        font-weight: 600;
+    }
+    .back-circle{
+        z-index:-1;
+        width:200px;
+        height:200px;
+        background:#95B9C7;
+        position:absolute;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        color:#FFFFFF;
+        left:0;
+        right:0;
+        bottom:0;
+    }
+}

@@ -1,0 +1,39 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+        <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <div class="back-circle"></div>
+    <ion-title class="ion-text-center custom-font">Show Feedback</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<div class="st1">
+  <table style="width:100%">
+    <tr>
+      <th>No</th>
+      <th>Name</th>
+      <th>Mobile</th>
+      <th>Email</th>
+      <th>Address</th>
+      <th>Feedback</th>
+
+   </tr>
+   <tr  *ngFor="let video1 of videos;let i=index;">
+    <td>{{i}}</td>
+    <td>{{video1.name}}</td>
+    <td>{{video1.mobile}}</td>
+    <td>{{video1.email}}</td>
+    <td>{{video1.address}}</td>
+    <td>{{video1.feedback}}</td>
+
+
+    
+
+  </tr>
+
+  </table>
+  </div>
+
+</ion-content>

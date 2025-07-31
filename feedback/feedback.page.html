@@ -1,0 +1,241 @@
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+ rel="stylesheet">
+
+ <ion-header class="ion-no-border">
+  <ion-toolbar>
+   
+        <ion-buttons slot="start">
+          <ion-menu-button menu="main-menu"></ion-menu-button>
+      </ion-buttons>
+    
+        
+    
+    <div class="back-circle"></div>
+    <ion-title class="ion-text-center custom-font">Feedback</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+  <!--svg align="center" class="back-blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <path fill="#628cff" d="M68.6,-33.5C81.6,-17.2,79.6,13.8,65.7,37.6C51.8,61.3,
+  25.9,77.8,2.1,76.6C-21.7,75.4,-43.5,56.5,-54.2,34.6C-65,12.7,-64.8,-12.3,-53.9,
+  -27.4C-43,-42.4,-21.5,-47.6,3.2,-49.4C27.9,-51.2,55.7,-49.7,68.6,-33.5Z"
+  transform="translate(100,100)"/>
+  </svg-->
+  <!--ion-card>
+    <ion-card-content>
+      <ion-row>
+        <ion-col>
+          <ion-list>
+            <form #form="ngForm">
+            <ion-item fill="outline" class="ion-margin-top">
+              <ion-label position="floating">UserName</ion-label>
+              <ion-input 
+              placeholder="Enter UserName" 
+              [clearInput]="true"
+              type="text"
+              name="uname" 
+              [(ngModel)]="uname" required="required"></ion-input>
+            </ion-item>
+
+            <ion-item fill="outline" class="ion-margin-top">
+              <ion-label position="floating">Mobile</ion-label>
+              <ion-input 
+              placeholder="Enter Mobile" 
+              [clearInput]="true"
+              type="tel"
+              name="umobile" maxlength="10"
+              [(ngModel)]="umobile" required="required"></ion-input>
+            </ion-item>
+
+            <ion-item fill="outline" class="ion-margin-top">
+              <ion-label position="floating">Email</ion-label>
+              <ion-input 
+              placeholder="Enter Email" 
+              [clearInput]="true"
+              type="email"
+              name="uemail" pattern="[A-Za-z0-9._%+-]{2,}@[a-zA-Z-_.]{2,}[.]{1}[a-zA-Z]{2,}"
+              [(ngModel)]="uemail" required="required"></ion-input>
+            </ion-item>
+           
+
+            <ion-item fill="outline" class="ion-margin-top">
+              <ion-label position="floating">Address</ion-label>
+              <ion-input 
+              placeholder="Enter Address" 
+              [clearInput]="true"
+              type="text"
+              name="uaddress" 
+              [(ngModel)]="uaddress" required="required"></ion-input>
+            </ion-item>
+
+            <ion-item fill="outline" class="ion-margin-top">
+              <ion-label position="floating">Feedback</ion-label>
+              <ion-input 
+              placeholder="Enter Feedback" 
+              [clearInput]="true"
+              type="text"
+              name="ufeedback" 
+              [(ngModel)]="ufeedback" required="required"></ion-input>
+            </ion-item>
+            <!-pattern="[A-Za-z0-9._%+-]{2,}@[a-zA-Z-_.]{2,}[.]{1}[a-zA-Z]{2,}"
+-->
+            <!--ion-button 
+            class="ion-margin-top" 
+            expand="block" 
+            type="submit"
+            [disabled]="!form.valid"
+             (click)="addForm(form)"
+             >Submit</ion-button>
+            </form>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card-->
+  <!--div id="container">
+    <form action="" [formGroup]="login" >
+      <div class="wrap-input">
+        <input class="input" type="text" formControlName="name" placeholder="Name">
+       </div>
+       <div *ngFor="let er of errors">
+        <ng-container *ngIf="login.get('name')?.hasError(er.type) && (login.get('name')?.touched || login.get('name')?.dirty)">
+          Name cannot be empty
+        </ng-container>
+      </div>
+      <mobile-->
+      <!--div class="wrap-input">
+        <input class="input" type="number" formControlName="mobile" placeholder="Mobile No">
+       </div>
+       <div *ngFor="let er of errors">
+        <ng-container *ngIf="login.get('mobile')?.hasError(er.type) && (login.get('mobile')?.touched || login.get('mobile')?.dirty)">
+          Mobile No cannot be empty
+        </ng-container>
+      </div>
+
+      <div class="wrap-input">
+        <input class="input" type="text" formControlName="email" placeholder="Email">
+       </div>
+       <div class="text-danger" *ngFor="let er of errors">
+        <div *ngIf="login.get('email')?.hasError(er.type) && (login.get('email')?.touched || login.get('email')?.dirty)">
+         Please provide a valid email address   </div></div>
+
+         <div class="wrap-input">
+          <input class="input" type="text" formControlName="prayer" placeholder="Feedback">
+         </div>
+         <div *ngFor="let er of errors">
+          <ng-container *ngIf="login.get('prayer')?.hasError(er.type) && (login.get('prayer')?.touched || login.get('prayer')?.dirty)">
+            Prayer cannot be empty
+          </ng-container>
+        </div>
+       
+      <div class="row">
+        <div class="col-6">
+          <button  type="submit"    [disabled]="login.invalid" class="form-btn custom-font" (click)="onSave()">Save</button>
+        </div>
+      </div>
+    </form>
+  </div-->
+  <!--form validation-->
+  <!--div class="ion-padding">
+      <div class="wrap-input">
+        <input class="input" type="text" [(ngModel)]="feed.name" placeholder="Name">
+      </div>
+
+      <div class="wrap-input">
+        <input class="input" type="text" numbers-only [(ngModel)]="feed.mobile" placeholder="Mobile">
+        <!input class="input" type="number"   [(ngModel)]="feed.mobile" placeholder="Mobile"-->
+      <!--/div>
+      
+      <div class="wrap-input">
+        <input class="input" type="text" [(ngModel)]="feed.email" placeholder="Email">
+      </div>
+
+
+      <div class="wrap-input">
+        <input class="input" type="text" [(ngModel)]="feed.address" placeholder="Address">
+      </div>
+
+      <div class="wrap-input">
+        <input class="input" type="text" [(ngModel)]="feed.feedback" placeholder="Feedback">
+      </div>
+
+      <div class="container-form-btn">
+        <button class="form-btn custom-font" (click)="testClick()">
+          Submit
+        </button>
+      </div>
+  </div-->
+  <ion-card>
+    <ion-card-content>
+      <ion-row>
+        <ion-col>
+          <ion-list>
+            <form #form="ngForm">
+            <ion-item fill="outline" class="ion-margin-top">
+              <ion-label position="floating">Name</ion-label>
+              <ion-input 
+              placeholder="Enter UserName" 
+              [clearInput]="true"
+              type="text"
+              name="uname" 
+              [(ngModel)]="uname" required="required"></ion-input>
+            </ion-item>
+
+            <ion-item fill="outline" class="ion-margin-top">
+              <ion-label position="floating">Mobile</ion-label>
+              <ion-input 
+              placeholder="Enter Mobile" 
+              [clearInput]="true"
+              type="tel"
+              name="umobile" maxlength="10"
+              [(ngModel)]="umobile" required="required"></ion-input>
+            </ion-item>
+
+            <ion-item fill="outline" class="ion-margin-top">
+              <ion-label position="floating">Email</ion-label>
+              <ion-input 
+              placeholder="Enter Email" 
+              [clearInput]="true"
+              type="email"
+              name="uemail" pattern="[A-Za-z0-9._%+-]{2,}@[a-zA-Z-_.]{2,}[.]{1}[a-zA-Z]{2,}"
+              [(ngModel)]="uemail" required="required"></ion-input>
+            </ion-item>
+           
+
+            <ion-item fill="outline" class="ion-margin-top">
+              <ion-label position="floating">Address</ion-label>
+              <ion-input 
+              placeholder="Enter Address" 
+              [clearInput]="true"
+              type="text"
+              name="uaddress" 
+              [(ngModel)]="uaddress" required="required"></ion-input>
+            </ion-item>
+
+            <ion-item fill="outline" class="ion-margin-top">
+              <ion-label position="floating">Feedback</ion-label>
+              <ion-input 
+              placeholder="Enter Feedback" 
+              [clearInput]="true"
+              type="text"
+              name="ufeedback" 
+              [(ngModel)]="ufeedback" required="required"></ion-input>
+            </ion-item>
+            <!--pattern="[A-Za-z0-9._%+-]{2,}@[a-zA-Z-_.]{2,}[.]{1}[a-zA-Z]{2,}"
+-->
+            <ion-button 
+            class="ion-margin-top" 
+            expand="block" 
+            type="submit"
+            [disabled]="!form.valid"
+             (click)="addForm(form)"
+             >Submit</ion-button>
+            </form>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+  
+</ion-content>

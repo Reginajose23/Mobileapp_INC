@@ -1,0 +1,162 @@
+<ion-app>
+  <ion-menu menuId="main-menu" contentId="main">
+    <ion-content>
+      <div class="menu-header-bg"></div>
+      <div class="header-content">
+        <img [src]="img_link"/>
+        <ion-label>
+          <h2>Indian Churches Network</h2>
+          <p>Madurai</p>
+        </ion-label>
+      </div>
+      <!--div class="action-button">
+        <ion-button>
+          <ion-icon slot="start" name="add"></ion-icon>Add Profile
+        </ion-button>
+      </div-->
+      <ion-list class="menu-items" lines="none">
+        <!----admin page-->
+        <ion-menu-toggle>
+
+          <ion-item [routerLink]="['./home']" routerLinkActive='active'>
+            <ion-icon  name="apps" slot="start"></ion-icon>
+            <ion-label>Home</ion-label>
+          </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle>
+  
+            <ion-item [routerLink]="['./addvideo']" routerLinkActive='active'>
+              <ion-icon  name="apps" slot="start"></ion-icon>
+              <ion-label>Video( Check & Delete )</ion-label>
+            </ion-item>
+            </ion-menu-toggle>
+            <ion-menu-toggle>
+  
+              <ion-item [routerLink]="['./addverse']" routerLinkActive='active'>
+                <ion-icon  name="apps" slot="start"></ion-icon>
+                <ion-label>Addverse</ion-label>
+              </ion-item>
+              </ion-menu-toggle>
+               <ion-menu-toggle>
+  
+              <ion-item [routerLink]="['./createshort']" routerLinkActive='active'>
+                <ion-icon  name="apps" slot="start"></ion-icon>
+                <ion-label>AddShort</ion-label>
+              </ion-item>
+              </ion-menu-toggle>
+              
+            
+          <ion-menu-toggle>
+            <ion-item [routerLink]="['./show-prayer']" routerLinkActive='active'>
+              <ion-icon name="git-compare" slot="start"></ion-icon>
+              <ion-label>Show Prayer Request</ion-label>
+            </ion-item>
+            </ion-menu-toggle>
+           <ion-menu-toggle>
+           <ion-item [routerLink]="['./show-verse']" routerLinkActive='active'>
+              <ion-icon name="document-text" slot="start"></ion-icon>
+              <ion-label>Verse(Check & delete)</ion-label>
+            </ion-item>
+            </ion-menu-toggle>
+         
+           
+        <!----user page
+        <ion-menu-toggle>
+
+        <ion-item [routerLink]="['./home']" routerLinkActive='active'>
+          <ion-icon  name="apps" slot="start"></ion-icon>
+          <ion-label>Home</ion-label>
+        </ion-item>
+        </ion-menu-toggle>
+            
+        <ion-menu-toggle>
+          <ion-item [routerLink]="['./prayer']" routerLinkActive='active'>
+            <ion-icon name="git-compare" slot="start"></ion-icon>
+            <ion-label>Prayer Request</ion-label>
+          </ion-item>
+          </ion-menu-toggle>
+         <ion-menu-toggle>
+         <ion-item [routerLink]="['./games']" routerLinkActive='active'>
+            <ion-icon name="document-text" slot="start"></ion-icon>
+            <ion-label>Daily Verse</ion-label>
+          </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle>
+
+          <ion-item [routerLink]="['./webtv']" routerLinkActive='active'>
+            <ion-icon name="tv" slot="start"></ion-icon>
+            <ion-label>Web TV</ion-label>
+          </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle>
+
+          <ion-item [routerLink]="['./videos']" routerLinkActive='active'>
+            <ion-icon name="logo-youtube" slot="start"></ion-icon>
+            <ion-label>Videos</ion-label>
+          </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle>
+
+          <ion-item [routerLink]="['./addchurch']" routerLinkActive='active'>
+            <ion-icon name="add-circle" slot="start"></ion-icon>
+            <ion-label>Add your Church</ion-label>
+          </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle>
+
+          <ion-item [routerLink]="['./quize']" routerLinkActive='active'>
+            <ion-icon name="help-circle" slot="start"></ion-icon>
+            <ion-label>Quizes</ion-label>
+          </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle>
+
+          <ion-item [routerLink]="['./dailyverse']" routerLinkActive='active'>
+            <ion-icon name="game-controller" slot="start"></ion-icon>
+            <ion-label>Games</ion-label>
+          </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle>
+
+          <ion-item  [routerLink]="['./contactus']" routerLinkActive='active'>
+            <ion-icon name="pin" slot="start"></ion-icon>
+            <ion-label>Contact Us</ion-label>
+          </ion-item>
+          </ion-menu-toggle>
+
+          <ion-menu-toggle>
+
+          <ion-item [routerLink]="['./feedback']" routerLinkActive='active'>
+            <ion-icon name="browsers" slot="start"></ion-icon>
+            <ion-label>Feedback</ion-label>
+          </ion-item>
+          </ion-menu-toggle>
+          
+          <ion-menu-toggle>
+
+          <ion-item [routerLink]="['./donate']" routerLinkActive='active'>
+            <ion-icon name="card" slot="start"></ion-icon>
+            <ion-label>Donate</ion-label>
+          </ion-item>
+          </ion-menu-toggle> -->
+        
+      </ion-list>
+
+    </ion-content>
+  </ion-menu>
+  
+  <ion-footer class="bar-stable">
+    <ion-grid>
+      <ion-row style="left:0;right:0;margin:0; width: 100%;position: fixed;bottom:0;  background: #f1f5f8;">
+       <ion-col width-25 [routerLink]="['/home']"><ion-icon name="apps"></ion-icon><br><span style="font-size:11px;"> Home</span> </ion-col>
+       <ion-col width-25 [routerLink]="['/webtv']"><ion-icon name="tv"></ion-icon><br><span style="font-size:11px;">Web TV</span></ion-col>
+
+       <ion-col width-25 [routerLink]="['/addchurch']"><ion-icon name="add-circle"></ion-icon><br><span style="font-size:11px;">Add Church</span></ion-col>
+       <ion-col width-25 [routerLink]="['/donate']"><ion-icon name="card"></ion-icon><br><span style="font-size:11px;"> Donate</span> </ion-col>
+       <ion-col width-25 [routerLink]="['/contactus']" ><ion-icon name="pin"></ion-icon><br><span style="font-size:11px;"> Contact</span> </ion-col>
+       
+     </ion-row>
+     </ion-grid>
+</ion-footer>
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>

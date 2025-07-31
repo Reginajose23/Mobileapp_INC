@@ -1,0 +1,126 @@
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+ rel="stylesheet">
+
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+        <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <div class="back-circle"></div>
+    <ion-title class="ion-text-center custom-font">Prayer</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+  <!--svg align="center" class="back-blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <path fill="#628cff" d="M68.6,-33.5C81.6,-17.2,79.6,13.8,65.7,37.6C51.8,61.3,
+  25.9,77.8,2.1,76.6C-21.7,75.4,-43.5,56.5,-54.2,34.6C-65,12.7,-64.8,-12.3,-53.9,
+  -27.4C-43,-42.4,-21.5,-47.6,3.2,-49.4C27.9,-51.2,55.7,-49.7,68.6,-33.5Z"
+  transform="translate(100,100)"/>
+  </svg-->
+ 
+    <ion-card>
+      <ion-card-content>
+        <ion-row>
+          <ion-col>
+            <ion-list>
+              <form #form="ngForm">
+              <ion-item fill="outline" class="ion-margin-top">
+                <ion-label position="floating">Name</ion-label>
+                <ion-input 
+                placeholder="Enter Name" 
+                [clearInput]="true"
+                type="text"
+                name="uname" 
+                [(ngModel)]="uname" required="required"></ion-input>
+              </ion-item>
+  
+              <ion-item fill="outline" class="ion-margin-top">
+                <ion-label position="floating">Mobile</ion-label>
+                <ion-input 
+                placeholder="Enter Mobile" 
+                [clearInput]="true"
+                type="tel"
+                name="umobile" maxlength="10"
+                [(ngModel)]="umobile" required="required"></ion-input>
+              </ion-item>
+  
+              <ion-item fill="outline" class="ion-margin-top">
+                <ion-label position="floating">Email</ion-label>
+                <ion-input 
+                placeholder="Enter Email" 
+                [clearInput]="true"
+                type="email"
+                name="uemail" pattern="[A-Za-z0-9._%+-]{2,}@[a-zA-Z-_.]{2,}[.]{1}[a-zA-Z]{2,}"
+                [(ngModel)]="uemail" required="required"></ion-input>
+              </ion-item>
+             
+  
+              <ion-item fill="outline" class="ion-margin-top">
+                <ion-label position="floating">Address</ion-label>
+                <ion-input 
+                placeholder="Enter Address" 
+                [clearInput]="true"
+                type="text"
+                name="uaddress" 
+                [(ngModel)]="uaddress" required="required"></ion-input>
+              </ion-item>
+  
+              <ion-item fill="outline" class="ion-margin-top">
+                <ion-label position="floating">Prayer</ion-label>
+                <ion-input 
+                placeholder="Enter Prayer" 
+                [clearInput]="true"
+                type="text"
+                name="ufeedback" 
+                [(ngModel)]="ufeedback" required="required"></ion-input>
+              </ion-item>
+              <!--pattern="[A-Za-z0-9._%+-]{2,}@[a-zA-Z-_.]{2,}[.]{1}[a-zA-Z]{2,}"
+  -->
+              <ion-button 
+              class="ion-margin-top" 
+              expand="block" 
+              type="submit"
+              [disabled]="!form.valid"
+               (click)="addForm(form)"
+               >Submit</ion-button>
+              </form>
+            </ion-list>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+    
+      <!--div class="wrap-input">
+        <input class="input" type="text" [(ngModel)]="prayer.name"  placeholder="Name">
+      </div>
+
+      <div class="wrap-input">
+        <!--input type="text" pattern="\d*" maxlength="2">
+
+        <input class="input" type="number"  min="0" max="10" maxlength="10"  [(ngModel)]="prayer.mobile"  placeholder="Mobile">
+      </div>
+
+      <div class="wrap-input">
+        <input class="input" type="email" [(ngModel)]="prayer.email"  pattern="[A-Za-z0-9._%+-]{2,}@[a-zA-Z-_.]{2,}[.]{1}[a-zA-Z]{2,}"
+        placeholder="Email">
+       
+      </div>
+
+      <div class="wrap-input">
+        <input class="input" type="text"  [(ngModel)]="prayer.address" placeholder="Address">
+      </div>
+
+      <div class="wrap-input">
+        <input class="input" type="text"  [(ngModel)]="prayer.prayer" placeholder="Prayer">
+      </div>
+
+      <div class="container-form-btn">
+        <button class="form-btn custom-font" (click)="testClick()">
+          Submit
+        </button> 
+      </div>
+  </div-->
+
+</ion-content>
+

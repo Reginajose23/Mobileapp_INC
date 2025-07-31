@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+  </ion-buttons>
+
+  <div class="back-circle"></div>
+  <ion-title class="ion-text-center custom-font">Daily Verse</ion-title>
+ </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="contact-wrap">
+    <div class="contact-in">
+  
+  <ion-item lines="none"  *ngFor="let video1 of videos2;let i=index;">
+    <ion-card  style="box-shadow: none;" style="height: 350px;width:100%;">
+      <img [src]="video1.image  | safepipe:'resourceUrl'"  style="height: 300px;"/>
+          <ion-card-content>
+        <ion-button (click)="share(video1.image)">Share</ion-button>
+      </ion-card-content>   
+    </ion-card>
+
+</ion-item>
+</div>
+</div>
+
+</ion-content>
